@@ -1,0 +1,16 @@
+:root {
+    --blue-lk : #0e76a8;
+    --white : #fff;
+    --grey : #5b5b5b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
