@@ -1,19 +1,77 @@
 @import url('./var.css');
 
-.nav {
-    display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-auto-columns: 1fr;
-    /* grid-template-columns: 1fr; */
+/* Header */
+
+header .nav {
+    display: flex;
+    flex-direction: row ;
+    width: 99%;
+    height: 70px;
+    padding: 5px;
+    border: 1px solid var(--grey);
+    margin: 2px;
+    border-radius: 2px;
 }
 
-.nav-image_content {
-    width: 50px;
-    height: 50px;
+.nav-linkedin-icon {
+    width: 27px;
+    height: 27px;
+    margin: 18px 5px;
+}
+/*Input header*/
+
+.nav-search {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--black);
+    margin-top: 12px;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.nav-search input {
+    width: 65%;
+    outline: none;
+    border: none;
+}
+.nav-search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--white);
+    width: 20px;
+    height: 20px;
+    justify-self: center;
+    margin-right: 5px;
+}
+
+/* User image */
+
+.nav-image {
+    display: flex;
+    justify-content: end;
+    min-width: 80px;
+    width: 37%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    place-content: end;
+    height: 90%;
+    margin-top: 5px;
     
 }
 
-.nav-linkedin-icon img{
-    width: 50px;
-    height: 50px;
+.nav-image_content {
+    width: 27px;
+    min-width: 25px;
+    height: 27px;
+    place-self: center;
+    border-radius: 49.9%;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.5px solid var(--grey);
 }
