@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-rickymorty",
+  "version": "1.0.0",
+  "description": "Página Web de Linkedin en Layout mobile, tablet and desktop. Asincronismo de JavaScript y POO para configuración de API. #VanillaJS #CSS3 #HTML5 #ECMAScript6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegofergamboa/Linkedin-RickyMorty.git"
+  },
+  "author": "diegofergamboa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diegofergamboa/Linkedin-RickyMorty/issues"
+  },
+  "homepage": "https://github.com/Diegofergamboa/Linkedin-RickyMorty#readme"
+}
