@@ -127,4 +127,9 @@ header .nav {
     font-size: 2rem;
     color: var(--grey);
 }
+.character-info {
+    font-size: 2rem;
+    color: var(--grey);
+    margin-bottom: 15px;
+}
 
