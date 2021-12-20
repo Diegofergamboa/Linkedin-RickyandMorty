@@ -78,4 +78,10 @@ header .nav {
 
 /* Character section */
 
+.card-character {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: repeat(2fr 1fr 3fr);
+}
+
 
