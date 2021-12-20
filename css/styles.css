@@ -5,6 +5,7 @@ header {
     margin-top: 70px;
 }
 header .nav {
+    /* * Contain */
 
     background-color: var(--white);
     display: flex;
@@ -13,7 +14,7 @@ header .nav {
     height: 70px;
     padding: 5px;
 
-    /* Flex properties */
+    /* * Flex properties */
 
     border-radius: 2px;
     position: fixed;
@@ -29,6 +30,7 @@ header .nav {
     height: 27px;
     margin: 18px 5px;
 }
+
 /*Input header*/
 
 .nav-search {
@@ -149,8 +151,8 @@ header .nav {
     /* * Container */
     background-color: var(--blue-lk);
     display: flex;
-    width: 90%;
-    height: 45px;
+    width: 85%;
+    height: 40px;
     /* * Foint */
     color: var(--white);
     font-weight: 600;
@@ -161,8 +163,47 @@ header .nav {
     border-radius: 25px;
     border: none;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-/* Links sections */
+/* Link section */
+
+.link-container {
+    height: auto;
+    width: 100%;
+    margin-left: 12px;
+    height: auto;
+    border-bottom: 1px solid rgb(177, 175, 175);
+}
+
+.link-container a {
+    font-size: 2rem;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 8px;
+    color: var(--blue-lk);
+    cursor: pointer;
+}
+.link-container div {
+    display: flex;
+    place-items: center;
+    margin-top: 16px;
+}
+
+.link-container div:last-child(2) {
+    margin-bottom: 50px;
+}
+
+.link-container div img {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
