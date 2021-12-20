@@ -204,5 +204,28 @@ header .nav {
     background-position: center;
 }
 
+/* Section Acerca de */
+
+.section-about {
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 16px;
+    border-bottom: 1px solid rgb(177, 175, 175);
+    margin-bottom: 8px;
+}
+.section-about p{
+    font-size: 2rem;
+}
+.section-about p:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.section-about p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 8px;
+    text-align: left;
+}
 
 
