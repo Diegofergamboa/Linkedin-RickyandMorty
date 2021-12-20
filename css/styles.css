@@ -170,7 +170,6 @@ header .nav {
 /* Link section */
 
 .link-container {
-    height: auto;
     width: 100%;
     margin-left: 12px;
     height: auto;
@@ -192,7 +191,7 @@ header .nav {
     margin-top: 16px;
 }
 
-.link-container div:last-child(2) {
+.link-container div:last-child {
     margin-bottom: 50px;
 }
 
