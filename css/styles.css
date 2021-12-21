@@ -151,7 +151,8 @@ header .nav {
     /* * Container */
     background-color: var(--blue-lk);
     display: flex;
-    width: 85%;
+    width: 272px;
+    max-width: 272px;
     height: 40px;
     /* * Foint */
     color: var(--white);
