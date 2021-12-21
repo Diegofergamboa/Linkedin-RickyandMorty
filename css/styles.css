@@ -95,6 +95,7 @@ header .nav {
     grid-template-columns: 100%;
     grid-auto-rows: repeat(100px 50px 3fr);
     margin: 10px 0px;
+    margin-left: 12px;
     /* box-shadow: 0px -5px 1px 0px rgb(0 0 0 / 20%) */
 }
 .port-photo img {
@@ -175,6 +176,7 @@ header .nav {
     margin-left: 12px;
     height: auto;
     border-bottom: 1px solid rgb(177, 175, 175);
+    margin-left: 24px;
 }
 
 .link-container a {
@@ -228,4 +230,41 @@ header .nav {
     text-align: left;
 }
 
+/* notice section */ 
 
+/* h2 img p */
+
+.notice {
+    margin-top: 24px;
+    display: grid;
+    gap: 10px;
+    width: 85%;
+    margin-left: 12px;
+}
+
+.notice img {
+    width: 250px;
+    max-width: 250px;
+    height: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.notice h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    justify-self: center;
+}
+.notice p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.name-linked {
+    margin-left: 12px;
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: grey;
+}
