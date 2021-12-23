@@ -1,4 +1,11 @@
-import API from '/api.js'
-const api = new API();
+/* Importar API */
+url_API = 'https://rickandmortyapi.com/api/character/';
 
-console.log(api.getCharacter(1));
+fetch('url_API')
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    })
+    .catch(err => console.error(err));
+
+s
