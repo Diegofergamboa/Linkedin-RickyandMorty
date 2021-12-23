@@ -10,6 +10,7 @@ header .nav {
     background-color: var(--white);
     display: flex;
     flex-direction: row ;
+    justify-content: space-between;
     width: 100%;
     height: 70px;
     padding: 5px;
@@ -35,7 +36,7 @@ header .nav {
 
 .nav-search {
     display: flex;
-    width: 150px;
+    width: 50%;
     height: 40px;
     border: 1px solid var(--black);
     margin-top: 12px;
@@ -73,12 +74,14 @@ header .nav {
     place-content: end;
     height: 90%;
     margin-top: 5px;
+    margin-right: 16px;
 }
 
 .nav-image_content {
     width: 27px;
     min-width: 25px;
     height: 27px;
+    min-height: 27px;
     place-self: center;
     border-radius: 49.9%;
     display: inline-block;
@@ -86,6 +89,7 @@ header .nav {
     background-repeat: no-repeat;
     background-position: center;
     border: 0.5px solid var(--grey);
+    margin-right: 16px;
 }
 
 /* Character section */
