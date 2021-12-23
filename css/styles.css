@@ -123,7 +123,7 @@ header .nav {
 
     /* * Medidas del relative */
     position: relative;
-    top: 20%;
+    top: -20px;
     margin-left: 10px;
 } 
 
@@ -215,8 +215,7 @@ header .nav {
 
 .section-about {
     width: 100%;
-    margin-top: 16px;
-    margin-left: 16px;
+    margin: 16px 2px 16px 2px;
     border-bottom: 1px solid rgb(177, 175, 175);
 }
 .section-about p{
@@ -271,4 +270,10 @@ header .nav {
     font-size: 1.7rem;
     font-weight: 100;
     color: grey;
+}
+
+/* media queries */
+
+@media screen {
+    /* Acomodar el avatar para pantallas superiores a 700px (superior a tablet)*/
 }
