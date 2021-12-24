@@ -1,10 +1,17 @@
 /* Importar API */
-const url_API = 'https://rickandmortyapi.com/api/character/';
+class API {
+    importData() {
+        fetch('https://rickandmortyapi.com/api/character/')
+            .then((response) => response.json())
+            .then((data) => {
+                getCharacter(data);
+            })
+            .catch(err => console.error(err));
+    }
+}
 
-fetch(url_API)
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
-    })
-    .catch(err => console.error(err));
+function getCharacter(data) {
+    console.log(data[1].info);
+}
+
 
