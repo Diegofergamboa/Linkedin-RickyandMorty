@@ -3,6 +3,7 @@ class API {
     async getCharacterById(id) {
         const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
         const data = await response.json()
+        // const dataEntries = await data.entries()
         return data
     }
 }
@@ -29,9 +30,7 @@ const newCharacterValue = changeId(parseInt(pickRandom(0, 827)));
 
 function loadNewCharacter() {
     const newCharacterSon = newCharacterValue;
-    // setImages(newCharacterSon);
-    console.log(newCharacterSon)
-    // alert(newCharacterSon.Object)
+    console.log(newCharacterSon);
 }
 
 function setImages (newCharacterImage) {
