@@ -28,17 +28,15 @@ const newCharacterValue = changeId(parseInt(pickRandom(0, 827)));
 // })
 
 function loadNewCharacter() {
-    let button = document.getElementById('btn-refresh');
-    button.onclick = alert('Sirve el botón de refresh');
-
-    
-    // const newCharacterSon = newCharacterValue;
+    const newCharacterSon = newCharacterValue;
     // setImages(newCharacterSon);
+    console.log(newCharacterSon.)
+    // alert(newCharacterSon.Object)
 }
 
 function setImages (newCharacterImage) {
-    const imageNav = document.getElementById("nav-image_content");
-    const imageProfile = document.getElementById("profile-photo");
+    const imageNav = document.getElementById("nav-image_content")[0];
+    const imageProfile = document.getElementById("profile-photo")[0];
     
     const imageNavSrc = imageNav.src;
     const imageProfileSrc = imageProfile.src;
