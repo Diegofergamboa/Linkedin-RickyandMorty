@@ -30,7 +30,7 @@ const newCharacterValue = changeId(parseInt(pickRandom(0, 827)));
 function loadNewCharacter() {
     const newCharacterSon = newCharacterValue;
     // setImages(newCharacterSon);
-    console.log(newCharacterSon.)
+    console.log(newCharacterSon)
     // alert(newCharacterSon.Object)
 }
 
