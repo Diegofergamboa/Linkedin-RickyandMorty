@@ -23,3 +23,9 @@ const newCharacter = changeId(parseInt(pickRandom(0, 827)));
 
 /* To save the performance work*/ 
 
+document.addEventListener("DOMContentLoaded" , () => {
+    setNewCharacter();
+})
+
+/* Setter of the new character */
+
