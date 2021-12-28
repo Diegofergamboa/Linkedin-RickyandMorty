@@ -50,4 +50,6 @@ async function get () {
 
 }
 
-get()
+// ### Cargando los personajes cuando ya esté listo el contenido de arriba #### //
+
+document.addEventListener("DOMContentLoaded", get());
