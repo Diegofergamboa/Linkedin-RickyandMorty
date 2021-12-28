@@ -271,10 +271,3 @@ header .nav {
     font-weight: 100;
     color: grey;
 }
-
-/* media queries */
-
-@media screen {
-    /* Acomodar el avatar para pantallas superiores a 700px (superior a tablet)*/
-    /* Crear segunda columna en tablet y, de desktop. */
-}
