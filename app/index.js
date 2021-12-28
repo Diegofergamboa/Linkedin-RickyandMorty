@@ -4,7 +4,7 @@ class API {
         const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
         const data = await response.json()
         const newData = await data;
-        const 
+        await this.gettinArray(); 
     }
     async gettinArray(newData) {
             const dataArray = Object.entries(newData)
