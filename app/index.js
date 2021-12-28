@@ -7,13 +7,16 @@ async function getCharacter (id) {
     return data
 }
 
-function pickRandom () {
-    return parseInt(Math.random(0,827));
+
+function pickRandom(minimo,maximo){
+    return Math.floor(Math.random() * ((maximo+1)-minimo)+minimo);
 }
+const random = parseInt(pickRandom(0, 826));
+
 
 async function get () {
-    const dataCharacter = await getCharacter(100); // [1][1]
-    // console.log(nameCharacter);
+    const dataCharacter = await getCharacter(random); // [1][1]
+    console.log('Estamos en el personaje ' + random);
 
     /* ###CAMBIANDO LA INFORMACIÓN DEL PERSONAJES ### */ 
 
@@ -21,15 +24,20 @@ async function get () {
     let nameDom = document.getElementById('character-name');
     nameDom.innerHTML = dataCharacter[1][1];
 
-    // Cambiando character type [3][1]
+    // Nombre de navBar 
+    let navDom = document.getElementById('nav-input');
+    navDom = navDom.value;
+    navDom.innerText = dataCharacter[1][1];
+
+    // Cambiando character type 
     let typeDom = document.getElementById('character-type');
     typeDom.innerHTML = 'Type: ' + dataCharacter[3][1];
 
-    // Cambiando character location [2][1]
+    // Cambiando character location 
     let locationDom = document.getElementById('character-location');
-    locationDom.innerHTML = 'Location: ' + dataCharacter[2][1];
+    locationDom.innerHTML = 'Status: ' + dataCharacter[2][1];
 
-    // Cambiando el character info [5][1]
+    // Cambiando el character info 
     let infoDom = document.getElementById('character-info');
     infoDom.innerHTML = 'Gender: ' + dataCharacter[5][1];
 
