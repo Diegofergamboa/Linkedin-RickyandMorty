@@ -308,12 +308,12 @@ header .nav {
 
     .nav-search {
         display: grid;
-        grid-template-columns: 100px 250px 250px 50px;
+        grid-template-columns: 64px 156px 156px 42px;
         grid-template-rows: repeat(1, auto);
         grid-row: 1fr auto;
         height: 42px;
         margin: 0;
-        width: 60%;
+        width: auto;
         align-self: initial;
 
     }
