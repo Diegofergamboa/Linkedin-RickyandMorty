@@ -286,11 +286,14 @@ header .nav {
 }
 
 @media screen and (min-width: 700px){
+    /* Section nav bar on tablet or desktop */
+
     header .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .nav-linkedin-icon {
         width: 90px;
         height: 42px;
@@ -302,15 +305,20 @@ header .nav {
         border: none;
         margin-left: 24px;
     }
+
     .nav-search {
         display: grid;
-        grid-template-columns: (4, 100px, 100px, 100px, 100px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
         grid-row: 1fr auto;
         height: 42px;
         margin: 0;
         width: 60%;
         align-self: initial;
 
+    }
+    .nav-search input {
+        display: none;
     }
     .nav-image {
         display: none;
