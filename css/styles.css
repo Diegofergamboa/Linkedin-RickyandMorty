@@ -30,6 +30,10 @@ header .nav {
     width: 27px;
     height: 27px;
     margin: 18px 5px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/174/174857.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*Input header*/
@@ -270,4 +274,27 @@ header .nav {
     font-size: 1.7rem;
     font-weight: 100;
     color: grey;
+}
+
+
+@media screen and (min-width: 700px){
+    header .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-linkedin-icon {
+        width: 90px;
+        height: 42px;
+        margin: 18px 5px;
+        background-image: url("https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+    }
+    .nav-search {
+        height: 42px;
+        margin: 0;
+    }
 }
