@@ -296,26 +296,26 @@ header .nav {
 
     .nav-linkedin-icon {
         width: 90px;
-        height: 42px;
+        height: 30px;
         margin: 18px 5px;
         background-image: url("https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border: none;
         margin-left: 24px;
     }
 
     .nav-search {
         display: grid;
-        grid-template-columns: 64px 156px 156px 42px;
+        grid-template-columns: 48px 156px 156px 42px;
         grid-template-rows: repeat(1, auto);
         grid-row: 1fr auto;
-        height: 42px;
+        height: 30px;
         margin: 0;
         width: auto;
         align-self: initial;
-
+        background-color: rgb(233, 225, 225);
+        border: none;
     }
     .nav-search input {
         display: none;
@@ -323,6 +323,25 @@ header .nav {
     .nav-image {
         display: none;
     }
-
+    .people-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        justify-items: center;
+        border-right: 1px solid var(--grey);
+    }
+    .people-container :nth-child(1) {
+        width: auto;
+    }
+    .people-container :nth-child(2) {
+        background-image: url("https://www.pngall.com/wp-content/uploads/6/Caret-Symbol-PNG-Clipart.png");
+        width: 10px;
+        height: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: 0.5px black solid; */
+        background-color: transparent;
+    }
 
 }
