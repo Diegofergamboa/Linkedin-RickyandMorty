@@ -298,11 +298,13 @@ header .nav {
         width: 90px;
         height: 30px;
         margin: 18px 5px;
-        background-image: url("https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png");
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         margin-left: 24px;
+        border: none;
+        background-color: transparent;
     }
 
     .nav-search {
@@ -354,6 +356,24 @@ header .nav {
         width: 16px;
         height: 16px;
         justify-self: center;
+    }
+    .p-join {
+        width: auto;
+        font-weight: 500;
+        color: rgb(102, 101, 101);
+    }
+    .btn-join {
+        background-color: var(--white);
+        /* * Foint */
+        color: var(--blue-lk);
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 6px;
+        margin-right: 16px;
+        /* * Other */
+        border-radius: 25px;
+        border: 1px var(--blue-lk) solid;
+        cursor: pointer;
     }
 
 }
