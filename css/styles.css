@@ -114,6 +114,13 @@ header .nav {
     background-position: center;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid rgb(177, 175, 175);
+}
+
 .profile-image {
     width: 130px;
     height: 130px;
