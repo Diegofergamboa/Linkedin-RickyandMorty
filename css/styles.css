@@ -388,5 +388,10 @@ main {
         border: 1px var(--blue-lk) solid;
         cursor: pointer;
     }
-
+}
+@media screen and (min-width: 1160px) {
+    main {
+        margin: 8px;
+    }
+    
 }
