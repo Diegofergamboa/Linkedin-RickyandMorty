@@ -7,12 +7,28 @@ async function getCharacter (id) {
     return data
 }
 
+async function buildCharacter() {
+    const builderCharacter = await getCharacter(random2);
+    let htmlCharacter = `
+        <div>
+            <img src="${builderCharacter[8][1]}">
+        </div>
+        <div>
+        <h2>${builderCharacter[1][1]}</h2>
+        <p>Type : ${builderCharacter[3][1]}</p>
+        <p>Status : ${builderCharacter[2][1]}</p>
+        <p>Gender : ${builderCharacter[5][1]}</p>
+        </div>
+        `
+    return htmlCharacter ;
+}
+
 
 function pickRandom(minimo,maximo){
     return Math.floor(Math.random() * ((maximo+1)-minimo)+minimo);
 }
 const random = parseInt(pickRandom(0, 826));
-
+const random2 = parseInt(pickRandom(0, 826));
 
 async function get () {
     const dataCharacter = await getCharacter(random); // [1][1]
@@ -54,3 +70,17 @@ async function get () {
 
 
 document.addEventListener("DOMContentLoaded", get());
+
+
+/*
+    CARD DEL CHARACTER
+    <div>
+        <img>
+    </div>
+    <div>
+    <h2>Nombre del personaje aleatorio</h2>
+    <p>Type : </p>
+    <p>Status : </p>
+    <p>Gender : </p>
+    </div>
+*/

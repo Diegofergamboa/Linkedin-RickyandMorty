@@ -408,16 +408,16 @@ main :nth-child(1) {
         height: auto;
         max-width: 320px;
         display: grid;
-        gap: 16px;
+        gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 150px);
-        border: 5px solid red;
+        grid-template-rows: repeat(10, 100px);
+        /* border: 5px solid red; */
         align-items: center;
         justify-items: center;
     }
     .characters {
         width: 200px;
         height: 80px;
-        border: 10px solid green;
+        /* border: 2px solid green; */
     }
 }
