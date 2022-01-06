@@ -296,14 +296,14 @@ main {
     .nav-search p{
         display: none;
     }
-    aside :nth-child(2) {
+    main :nth-child(2) {
         display: none;
     }
 }
 
 @media screen and (min-width: 700px){
     /* Section nav bar on tablet or desktop */
-    aside :nth-child(2) {
+    main :nth-child(2) {
         display: none;
     }
     header .nav {
@@ -400,6 +400,7 @@ main {
     }
     .left-principal-containers {
         width: auto;
+        max-width: 600px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -409,6 +410,11 @@ main {
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 150px);
         margin: 5px solid red;
+    }
+    .characters {
+        width: auto;
+        height: 150px;
     }
 }
