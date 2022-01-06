@@ -398,5 +398,17 @@ main {
     main {
         margin: 8px;
     }
-    
+    .left-principal-containers {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .individual-containers {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5px solid red;
+    }
 }
