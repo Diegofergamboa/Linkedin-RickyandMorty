@@ -14,7 +14,7 @@ async function buildCharacter() {
         const character = getting;
         let htmlCharacter = `
             <div>
-                <img src="${character[8][1]}">
+                <img class = "imageCharacter" src="${character[8][1]}">
             </div>
             <div>
             <h2>${character[1][1]}</h2>
