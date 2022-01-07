@@ -4,6 +4,9 @@
 header {
     margin-top: 70px;
 }
+main {
+    margin: 0 auto;
+}
 header .nav {
     /* * Contain */
 
@@ -416,16 +419,17 @@ main :nth-child(1) {
         justify-items: center;
     }
     .characters {
+        display: flex;
         width: 200px;
         height: 80px;
+        justify-content: left;
+        margin-left: 16px;
         /* border: 2px solid green; */
-    }
-    .individual-containers {
-        display: flex;
     }
     .imageCharacter {
         width: 56px;
         height: 56px;
         border-radius: 100%;
+        margin-right: 16px;
     }
 }
