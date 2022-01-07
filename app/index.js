@@ -9,40 +9,42 @@ async function getCharacter (id) {
 
 async function buildCharacter() {
 
-    let builderCharacter = []
-    for (let i = 0 ; i <= 10 ; i ++ ) {
+    for (let i = 1 ; i <= 10 ; i ++ ) {
         const getting = await getCharacter(randomBy());
-        builderCharacter += getting;
+        const character = getting;
+        let htmlCharacter = `
+            <div>
+                <img src="${character[8][1]}">
+            </div>
+            <div>
+            <h2>${character[1][1]}</h2>
+            <p>Type : ${character[3][1]}</p>
+            <p>Status : ${character[2][1]}</p>
+            <p>Gender : ${character[5][1]}</p>
+            </div>
+        `
+        document.getElementsByClassName(`character${i}`)[0].innerHTML = htmlCharacter;    
     }
 
-    let htmlCharacter = ''
 
     
-    builderCharacter.forEach(character => {
-        console.log(character);
-        // htmlCharacter +=
-        // `
-        //     <div>
-        //         <img src="${character[8][1]}">
-        //     </div>
-        //     <div>
-        //     <h2>${character[1][1]}</h2>
-        //     <p>Type : ${character[3][1]}</p>
-        //     <p>Status : ${character[2][1]}</p>
-        //     <p>Gender : ${character[5][1]}</p>
-        //     </div>
-        // `
-    })
-    // document.getElementsByClassName("character1")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character2")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character3")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character4")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character5")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character6")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character7")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character8")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character9")[0].innerHTML = htmlCharacter;
-    // document.getElementsByClassName("character10")[0].innerHTML = htmlCharacter;
+    
+    
+    
+    // characterAssign();
+    
+    function characterAssign() {
+        document.getElementsByClassName("character1")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character2")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character3")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character4")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character5")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character6")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character7")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character8")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character9")[0].innerHTML = htmlCharacter;
+        document.getElementsByClassName("character10")[0].innerHTML = htmlCharacter;
+    }
 }
 
 
