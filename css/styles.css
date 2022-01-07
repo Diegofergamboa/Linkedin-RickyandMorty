@@ -420,6 +420,9 @@ main :nth-child(1) {
         height: 80px;
         /* border: 2px solid green; */
     }
+    .individual-containers {
+        display: flex;
+    }
     .imageCharacter {
         width: 56px;
         height: 56px;
