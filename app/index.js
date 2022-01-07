@@ -8,31 +8,55 @@ async function getCharacter (id) {
 }
 
 async function buildCharacter() {
-    const builderCharacter = await getCharacter(random2);
-    let htmlCharacter = `
-        <div>
-            <img src="${builderCharacter[8][1]}">
-        </div>
-        <div>
-        <h2>${builderCharacter[1][1]}</h2>
-        <p>Type : ${builderCharacter[3][1]}</p>
-        <p>Status : ${builderCharacter[2][1]}</p>
-        <p>Gender : ${builderCharacter[5][1]}</p>
-        </div>
-        `
-    return htmlCharacter ;
+
+    let builderCharacter = []
+    for (let i = 0 ; i <= 10 ; i ++ ) {
+        const getting = await getCharacter(randomBy());
+        builderCharacter += getting;
+    }
+
+    let htmlCharacter = ''
+
+    
+    builderCharacter.forEach(character => {
+        console.log(character);
+        // htmlCharacter +=
+        // `
+        //     <div>
+        //         <img src="${character[8][1]}">
+        //     </div>
+        //     <div>
+        //     <h2>${character[1][1]}</h2>
+        //     <p>Type : ${character[3][1]}</p>
+        //     <p>Status : ${character[2][1]}</p>
+        //     <p>Gender : ${character[5][1]}</p>
+        //     </div>
+        // `
+    })
+    // document.getElementsByClassName("character1")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character2")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character3")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character4")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character5")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character6")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character7")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character8")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character9")[0].innerHTML = htmlCharacter;
+    // document.getElementsByClassName("character10")[0].innerHTML = htmlCharacter;
 }
 
 
 function pickRandom(minimo,maximo){
     return Math.floor(Math.random() * ((maximo+1)-minimo)+minimo);
 }
-const random = parseInt(pickRandom(0, 826));
-const random2 = parseInt(pickRandom(0, 826));
+function randomBy () {
+    return parseInt(pickRandom(0, 826));
+}
+
 
 async function get () {
-    const dataCharacter = await getCharacter(random); // [1][1]
-    console.log('Estamos en el personaje ' + random);
+    const dataCharacter = await getCharacter(randomBy()); // [1][1]
+    // console.log('Estamos en el personaje ' + random1);
 
     /* ###CAMBIANDO LA INFORMACIÓN DEL PERSONAJES ### */ 
 
@@ -69,7 +93,7 @@ async function get () {
 // ### Cargando los personajes cuando ya esté listo el contenido de arriba #### //
 
 
-document.addEventListener("DOMContentLoaded", get());
+document.addEventListener("DOMContentLoaded", get(), buildCharacter());
 
 
 /*
