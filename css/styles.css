@@ -6,6 +6,7 @@ header {
 }
 main {
     margin: 0 auto;
+    justify-content: center;
 }
 header .nav {
     /* * Contain */
@@ -302,22 +303,22 @@ main :nth-child(1) {
     .nav-search p{
         display: none;
     }
-    main :nth-child(2) {
+    .individual-containers {
         display: none;
     }
-    .imageCharacter {
+    .h2-section {
         display: none;
     }
 }
 
 @media screen and (min-width: 700px){
     /* Section nav bar on tablet or desktop */
+
     header .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .nav-linkedin-icon {
         width: 90px;
         height: 30px;
@@ -399,8 +400,14 @@ main :nth-child(1) {
         border: 1px var(--blue-lk) solid;
         cursor: pointer;
     }
+    .individual-containers {
+        display: none;
+    }
+    .h2-section {
+        display: none;
+    }
 }
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1120px) {
     main {
         margin: 8px;
     }
@@ -427,6 +434,7 @@ main :nth-child(1) {
         height: 80px;
         margin: 0 auto;
         margin-left: 16px;
+        justify-self: right;
         /* border: 2px solid green; */
     }
     .imageCharacter {
@@ -434,5 +442,12 @@ main :nth-child(1) {
         height: 56px;
         border-radius: 100%;
         margin-right: 16px;
+    }
+    section .h2-section {
+        display: inline-block;
+        color: grey;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 8px 0px 16px 16px;
     }
 }
