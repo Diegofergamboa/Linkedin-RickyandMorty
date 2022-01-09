@@ -305,6 +305,9 @@ main :nth-child(1) {
     main :nth-child(2) {
         display: none;
     }
+    .imageCharacter {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 700px){
@@ -420,9 +423,9 @@ main :nth-child(1) {
     }
     .characters {
         display: flex;
-        width: 200px;
+        width: auto;
         height: 80px;
-        justify-content: left;
+        margin: 0 auto;
         margin-left: 16px;
         /* border: 2px solid green; */
     }
